@@ -7,8 +7,8 @@ describe('userstore App', function() {
     page = new UserstorePage();
   });
 
-  it('should display message saying app works', () => {
+  it('should display message saying Member List', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
+    expect(page.getParagraphText()).toEqual('Member list!');
   });
 });

@@ -1,0 +1,12 @@
+<div *ngIf="users && users.length">
+  <h3>Your User List is here!</h3>
+  <ul>
+      <li *ngFor="let user of users">{{user.firstname}} {{user.lastname}}</li>
+  </ul>
+</div>
+<div>
+   You can also create Users here : <br />
+  <input type="text" placeholder="First Name" [(ngModel)]='model.firstname' />
+  <input type="text" placeholder="Last Name" [(ngModel)]='model.lastname'  />
+  <button (click)='submitUser()'>Add</button>
+</div>
